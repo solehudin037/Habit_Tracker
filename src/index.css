@@ -284,21 +284,21 @@ select.input-field {
 @media (max-width: 768px) {
 
   .app-container {
-    display: block;
+    display: block !important;
   }
 
   .sidebar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
 
-    width: 100vw;
-    max-width: 100vw;
+    width: 100% !important;
+    max-width: 100% !important;
 
     height: 65px; /* jangan terlalu besar */
 
-    padding: 0 1rem;
+    padding: 0 12px;
 
     display: flex;
     align-items: center;
@@ -306,7 +306,7 @@ select.input-field {
     background: var(--card-bg);
     border-bottom: 1px solid var(--border-color);
 
-    z-index: 1000;
+    z-index: 9999;
   }
 
   .sidebar-header {
@@ -316,18 +316,20 @@ select.input-field {
 
   height: 100%;
   width: 100%;
+  }
 
-  padding: 0 0.5rem; /* 🔥 horizontal aja */
-}
+  .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  }
 
   .sidebar-nav {
     display: none;
   }
 
   .main-content {
-    width: 100%;
-    padding: 1rem;
-    padding-bottom: 80px;
+    margin-top: 65px !important; /* 🔥 penting */
   }
 
   .logo-text span {
@@ -415,13 +417,6 @@ body {
   color: var(--primary-color);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 100%; /* 🔥 ini penting */
-}
-
 .grid-cols-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -439,14 +434,6 @@ body {
   .grid-cols-4,
   .grid-cols-2 {
     grid-template-columns: 1fr !important;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  .main-content {
-    margin-top: 65px; /* 🔥 penting */
   }
 
 }
