@@ -13,15 +13,23 @@ const AppContent = () => {
   const { activeTab } = useAppContext();
 
   const renderView = () => {
-    switch (activeTab) {
-      case 'dashboard': return <Dashboard />;
-      case 'habits': return <Habits />;
-      case 'tasks': return <Tasks />;
-      case 'workout': return <Workout />;
-      case 'analytics': return <Analytics />;
-      default: return <Dashboard />;
-    }
-  };
+  switch (activeTab) {
+    case 'dashboard':
+      return <Dashboard />;
+    case 'habits':
+      return <Habits />;
+    case 'tasks':
+      return <Tasks />;
+    case 'workout':
+      return <Workout />;
+    case 'analytics':
+      return <Analytics />;
+    default:
+      return <Dashboard />; // 🔥 fallback
+  }
+};
+
+console.log("ACTIVE TAB:", activeTab);
 
   return (
     <div className="app-container">
