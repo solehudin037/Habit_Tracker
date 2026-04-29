@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import { useAppContext } from '../context/AppContext';
+import { Home, CheckSquare, BookOpen, Dumbbell, BarChart } from "lucide-react";
 
 const Sidebar = () => {
   const { activeTab, setActiveTab } = useAppContext();
 
   const navItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: '📊' },
-    { id: 'habits', label: 'Habits', icon: '✅' },
-    { id: 'tasks', label: 'Tugas Kuliah', icon: '📚' },
-    { id: 'workout', label: 'Workout', icon: '💪' },
-    { id: 'analytics', label: 'Analytics', icon: '📈' },
-  ];
+  { id: 'dashboard', label: 'Dashboard', icon: <Home size={18} /> },
+  { id: 'habits', label: 'Habits', icon: <CheckSquare size={18} /> },
+  { id: 'tasks', label: 'Tugas Kuliah', icon: <BookOpen size={18} /> },
+  { id: 'workout', label: 'Workout', icon: <Dumbbell size={18} /> },
+  { id: 'analytics', label: 'Analytics', icon: <BarChart size={18} /> },
+];
 
   // ✅ Load theme sekali saat awal
   useEffect(() => {

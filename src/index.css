@@ -455,3 +455,18 @@ body {
   }
 
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item svg {
+  stroke-width: 2;
+  transition: 0.2s;
+}
+
+.nav-item.active svg {
+  color: var(--primary-color);
+}
