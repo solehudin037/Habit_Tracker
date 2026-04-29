@@ -235,3 +235,55 @@ select.input-field {
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out forwards;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  /* Layout jadi vertikal */
+  .app-container {
+    flex-direction: column;
+  }
+
+  /* Sidebar jadi top bar */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  /* Sembunyikan menu list default */
+  .sidebar-nav {
+    display: none;
+  }
+
+  /* Content full width */
+  .main-content {
+    padding: 1rem;
+    height: auto;
+  }
+
+  /* Grid jadi 1 kolom */
+  .grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
