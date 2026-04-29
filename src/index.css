@@ -417,6 +417,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -468,5 +469,18 @@ body {
 }
 
 .nav-item.active svg {
+  color: var(--primary-color);
+}
+
+.sidebar {
+  padding-top: 0.5rem; /* kasih nafas */
+}
+
+.bottom-nav svg {
+  stroke-width: 2;
+  transition: 0.2s;
+}
+
+.bottom-nav .nav-item.active svg {
   color: var(--primary-color);
 }
