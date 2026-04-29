@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useAppContext } from '../context/AppContext';
 
 const Sidebar = () => {
@@ -12,8 +12,27 @@ const Sidebar = () => {
     { id: 'analytics', label: 'Analytics', icon: '📈' },
   ];
 
+  // ✅ Load theme sekali saat awal
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+    }
+  }, []);
+
+  // ✅ Toggle theme
+  const toggleTheme = () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark") ? "dark" : "light"
+    );
+  };
+
   return (
     <aside className="sidebar">
+      
+      {/* HEADER */}
       <div className="sidebar-header">
         <div className="logo">
           <div className="logo-icon">⚡</div>
@@ -23,6 +42,8 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
+
+      {/* NAV */}
       <nav className="sidebar-nav">
         <ul>
           {navItems.map((item) => (
@@ -38,6 +59,14 @@ const Sidebar = () => {
           ))}
         </ul>
       </nav>
+
+      {/* 🔥 THEME TOGGLE (DI LUAR MAP) */}
+      <div className="sidebar-footer">
+        <button className="theme-toggle" onClick={toggleTheme}>
+          🌙 Dark Mode
+        </button>
+      </div>
+
     </aside>
   );
 };
