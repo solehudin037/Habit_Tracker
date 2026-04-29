@@ -1,0 +1,72 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 260px;
+  background-color: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.sidebar-header {
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-item .icon {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.nav-item:hover {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+.nav-item.active {
+  background-color: #ecfdf5; /* Light green bg */
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Page Headers */
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.page-header p {
+  font-size: 0.95rem;
+}
