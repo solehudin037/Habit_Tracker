@@ -24,10 +24,6 @@ const Dashboard = () => {
 
   return (
     <div className="animate-fade-in">
-      <div className="page-header">
-        <h1>Dashboard</h1>
-      </div>
-
       <div className="grid grid-cols-4 gap-4 mb-4">
         <div className="card">
           <h3>Habits Today</h3>
