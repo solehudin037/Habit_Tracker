@@ -291,8 +291,11 @@ select.input-field {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
 
     width: 100vw;
+    max-width: 100vw;
+
     height: 65px; /* jangan terlalu besar */
 
     padding: 0 1rem;
@@ -307,14 +310,15 @@ select.input-field {
   }
 
   .sidebar-header {
-    display: flex;
-    align-items: center;   /* 🔥 center vertical */
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
+  height: 100%;
+  width: 100%;
+
+  padding: 0 0.5rem; /* 🔥 horizontal aja */
+}
 
   .sidebar-nav {
     display: none;
@@ -370,12 +374,7 @@ select.input-field {
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    var(--bg-color),
-    #f0fdf4
-  );
-  color: var(--text-main);
+  background: var(--bg-color);
 }
 
 .sidebar-footer {
@@ -419,7 +418,8 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap : 8px;
+  gap: 8px;
+  height: 100%; /* 🔥 ini penting */
 }
 
 .grid-cols-4 {
@@ -449,4 +449,10 @@ body {
     margin-top: 65px; /* 🔥 penting */
   }
 
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    height: auto;
+  }
 }
