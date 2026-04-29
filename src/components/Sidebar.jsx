@@ -42,7 +42,7 @@ const Sidebar = () => {
           </div>
         </div>
         <button className="theme-toggle" onClick={toggleTheme}>
-          🌙 Dark Mode
+          🌙
         </button>
       </div>
 
