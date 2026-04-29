@@ -41,6 +41,9 @@ const Sidebar = () => {
             <strong>Tracker</strong>
           </div>
         </div>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          🌙 Dark Mode
+        </button>
       </div>
 
       {/* NAV */}
@@ -59,13 +62,6 @@ const Sidebar = () => {
           ))}
         </ul>
       </nav>
-
-      {/* 🔥 THEME TOGGLE (DI LUAR MAP) */}
-      <div className="sidebar-footer">
-        <button className="theme-toggle" onClick={toggleTheme}>
-          🌙 Dark Mode
-        </button>
-      </div>
 
     </aside>
   );
