@@ -312,6 +312,7 @@ select.input-field {
     justify-content: space-between;
 
     height: 100%;
+    width: 100%;
     padding: 0.5rem 0;
   }
 
@@ -351,6 +352,7 @@ select.input-field {
   justify-content: center;
   cursor: pointer;
   transition: var(--transition);
+  margin-left: 10px;
 }
 
 .theme-toggle:hover {
@@ -417,6 +419,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  gap : 8px;
 }
 
 .grid-cols-4 {
