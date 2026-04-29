@@ -15,7 +15,13 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h2>Productivity<br/>Tracker</h2>
+        <div className="logo">
+          <div className="logo-icon">⚡</div>
+          <div className="logo-text">
+            <span>Productivity</span>
+            <strong>Tracker</strong>
+          </div>
+        </div>
       </div>
       <nav className="sidebar-nav">
         <ul>

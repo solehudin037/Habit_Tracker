@@ -70,3 +70,62 @@
 .page-header p {
   font-size: 0.95rem;
 }
+
+/* ===== LOGO ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.logo-text strong {
+  font-size: 1rem;
+  color: #10b981;
+}
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 1rem;
+  }
+
+  .sidebar-header {
+    margin-bottom: 0;
+  }
+
+  .logo-text span {
+    font-size: 0.7rem;
+  }
+
+  .logo-text strong {
+    font-size: 0.9rem;
+  }
+
+}
+
+.sidebar-header {
+  margin-bottom: 1.5rem;
+}
