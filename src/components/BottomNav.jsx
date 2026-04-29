@@ -10,7 +10,7 @@ export default function BottomNav() {
         className={`nav-item ${activeTab === "dashboard" ? "active" : ""}`}
         onClick={() => setActiveTab("dashboard")}
       >
-        <span>🏠</span>
+        🏠
         <small>Home</small>
       </button>
 
@@ -18,7 +18,7 @@ export default function BottomNav() {
         className={`nav-item ${activeTab === "habits" ? "active" : ""}`}
         onClick={() => setActiveTab("habits")}
       >
-        <span>✅</span>
+        ✅
         <small>Habits</small>
       </button>
 
@@ -26,7 +26,7 @@ export default function BottomNav() {
         className={`nav-item ${activeTab === "tasks" ? "active" : ""}`}
         onClick={() => setActiveTab("tasks")}
       >
-        <span>📚</span>
+        📚
         <small>Tugas</small>
       </button>
 
@@ -34,7 +34,7 @@ export default function BottomNav() {
         className={`nav-item ${activeTab === "workout" ? "active" : ""}`}
         onClick={() => setActiveTab("workout")}
       >
-        <span>💪</span>
+        💪
         <small>Workout</small>
       </button>
 

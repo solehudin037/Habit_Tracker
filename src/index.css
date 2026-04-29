@@ -296,27 +296,22 @@ select.input-field {
 
 @media (max-width: 768px) {
 
-  /* Sembunyikan sidebar */
   .sidebar {
     display: none;
   }
 
-  /* Konten full */
   .main-content {
-    padding: 1rem;
-    padding-bottom: 80px; /* ruang untuk nav bawah */
+    padding-bottom: 80px;
   }
 
-  /* Bottom nav muncul */
   .bottom-nav {
     display: flex;
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
     height: 65px;
     background: white;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid #ddd;
     justify-content: space-around;
     align-items: center;
     z-index: 999;
@@ -324,25 +319,13 @@ select.input-field {
 
   .bottom-nav .nav-item {
     flex-direction: column;
-    font-size: 0.75rem;
-    color: var(--text-muted);
     background: none;
     border: none;
-  }
-
-  .bottom-nav .nav-item span {
-    font-size: 1.3rem;
+    font-size: 0.75rem;
   }
 
   .bottom-nav .nav-item.active {
-    color: var(--primary-color);
-    font-weight: 600;
-  }
-
-  /* Grid jadi 1 kolom */
-  .grid-cols-4,
-  .grid-cols-2 {
-    grid-template-columns: 1fr !important;
+    color: #10b981;
   }
 }
 
