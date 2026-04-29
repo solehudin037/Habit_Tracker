@@ -26,7 +26,6 @@ const Dashboard = () => {
     <div className="animate-fade-in">
       <div className="page-header">
         <h1>Dashboard</h1>
-        <p>Welcome back! Here's your productivity overview.</p>
       </div>
 
       <div className="grid grid-cols-4 gap-4 mb-4">
